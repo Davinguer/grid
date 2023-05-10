@@ -1,0 +1,328 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(240, 232, 255);
+}
+
+.container{
+ display: grid;
+ grid-template-columns: 1fr 1fr  1fr 1fr ;
+ grid-template-rows: 10,9vh,  ;
+ grid-template-areas:  
+ "header header" 
+ "aside aside"
+ "main footer"
+ "aside02 aside02"
+ "main02 footer02 "
+  "aside03 aside03"  
+
+;
+
+}
+
+header{
+    background-color: rgb(130, 143, 137);
+    color: rgb(255, 255, 255);
+    grid-area: header;
+    height: 3000px;
+    grid-column-start:1 ;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    align-items: start;
+    background-image: url(gif\ fof.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+footer{
+    background-color: rgb(112, 81, 177);
+    color: rgb(255, 255, 255);
+    grid-area: footer;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    
+}
+footer:hover{
+    background-color: rgb(39, 16, 61);
+}
+
+main{
+    background-color: rgb(132, 105, 146);
+    color: rgb(255, 255, 255);
+    grid-area:  main;
+    height: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+main:hover{
+    background-color: rgb(52, 20, 71);
+
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 230px;
+    display: flex;
+    color: azure;
+    word-break: break-all;
+    margin: 500px;
+    padding: 10px;
+}
+h2{
+    color: rgb(241, 225, 255);
+   padding-top:10%;
+   font-size: 100px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-position: center;
+}
+.logo{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 100%;
+    background-image: url(gif\ 2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    border-top-color: aliceblue;
+    border: solid 16px white;
+
+}
+aside{
+    background-color: rgb(96, 56, 127);
+    color: rgb(255, 255, 255);
+    grid-area: aside;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 50px;
+   
+}
+h3{
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside02{
+    background-color: rgb(156, 79, 79);
+    color: rgb(255, 255, 255);
+    grid-area: aside02;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 50px;
+   
+}
+
+.logo02{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 100%;
+    background-image: url(gif\ atrasado.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    border-top-color: aliceblue;
+    border: solid 16px white;
+}
+.main02{
+    background-color: rgb(185, 114, 114);
+    color: rgb(255, 255, 255);
+    grid-area: main02;
+    height: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.main02:hover{
+    background-color: rgb(52, 15, 15);
+}
+.main03{
+    background-color: rgb(117, 55, 66);
+    color: rgb(255, 255, 255);
+    grid-area: main02;
+    height: 1000px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.main03:hover{
+    background-color: rgb(52, 15, 15);
+}
+.footer02{
+    background-color: rgb(103, 42, 42);
+    color: rgb(255, 255, 255);
+    grid-area: footer02;
+    height: 1000px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    
+}
+.footer02:hover{
+    background-color: rgb(52, 15, 15);
+}
+.aside03{
+    background-color: rgb(149, 123, 81);
+    color: rgb(255, 255, 255);
+    grid-area: aside03;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 50px;
+   
+}
+.logo03{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 100%;
+    background-image: url(gif\ pão.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    border-top-color: aliceblue;
+    border: solid 16px white;
+ 
+}
+
+.mainx{
+    background-color: rgb(180, 149, 106);
+    color: rgb(255, 255, 255);
+    grid-area: mainx;
+    height: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainx:hover{
+    background-color: rgb(96, 77, 56)   
+   }
+    
+.mainxx{
+    background-color: rgb(94, 73, 54);
+    color: rgb(255, 255, 255);
+    grid-area: mainxx;
+    height: 1000px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainxx:hover{
+    background-color: rgb(96, 77, 56)   
+   }
+    
+.footerxxx{
+    background-color: rgb(171, 140, 107);
+    color: rgb(255, 255, 255);
+    grid-area: footerxxxx;
+    height: 1000px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footerxxx:hover{
+    background-color: rgb(96, 77, 56)   
+   }
+    
+.footerxxxx{
+    background-color: rgb(117, 94, 55);
+    color: rgb(255, 255, 255);
+    grid-area: footerxxxx;
+    height: 1000px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerxxxx:hover{
+ background-color: rgb(96, 77, 56)   
+}
+ 
+/* .aside04{
+    background-color: rgb(117, 177, 155);
+    color: rgb(255, 255, 255);
+    grid-area: aside04;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 50px;
+   
+}
+.logo04{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 100%;
+    background-image: url(gif\ comentario.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    border-top-color: aliceblue;
+    border: solid 4px white;
+} */
